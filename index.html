@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Строительный магазин — каталог стройматериалов и инструментов</title>
+
+        <meta name="description" content="Интернет‑магазин стройматериалов: цемент, гипсокартон, крепеж, инструменты. Доставка по городу, выгодные цены, акции.">
+        <meta name="keywords" content="стройматериалы, купить цемент, гипсокартон, крепеж, инструменты для ремонта">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Строительный магазин — каталог стройматериалов">
+        <meta property="og:description" content="Широкий ассортимент стройматериалов и инструментов. Доставка, скидки, гарантия.">
+        <meta name="author" content="Елефтериади Иван Александрович">
+        
+        <style>
+
+            body {
+
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: rgb(175, 175, 175);
+                background-image: url('images/background.jpg');
+                
+            }
+
+            .menu ul {
+                font-size: 20px;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly; /* равные промежутки и между, и по краям */
+            }
+
+            .menu a {
+                color: #d35400;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            
+            .menu a:hover {
+                text-decoration: underline;
+            }
+            
+            .menu {
+                background-color: #ffffff;
+                padding: 15px 0;
+                border-radius: 12px;
+            }  
+            
+            .catalog-grid {
+                background-color: #ffffff;
+                padding: 24px;
+                margin: 20px;
+                border-radius: 12px; 
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 24px;
+            }
+
+            .product-card {
+                background-color: #b3b0b0;
+                padding: 16px;
+                border-radius: 12px;
+                align-items: center; 
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-evenly;
+            }
+            
+            .product-image {
+                width: 100%;          
+                height: 200px;         
+                object-fit: cover;     
+                border-radius: 12px;
+                margin-bottom: 16px; 
+                display: block;        
+            }
+
+            .btn {
+                background-color: #d35400;
+                color: white;
+                width: 100%;
+                padding:8px 16px; 
+                border-radius: 6px;
+                cursor:pointer;
+                border: none
+            }
+
+            .btn:hover {
+                background-color: #161515;
+            }
+            
+            .address-block {
+                background-color: #ffffff;
+                padding: 12px;
+                margin-bottom: 15px;
+                border-radius: 12px;  
+            }
+
+            .sites-block {
+                background-color: #ffffff;
+                padding: 12px;
+                border-radius: 12px;  
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class=menu>
+                <nav>
+                    <ul>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#similar-sites">Похожие сайты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="container">
+            <!-- Каталог -->
+            <section id="catalog">
+                <div class="catalog-grid">
+                    <div class="product-card">
+                        <img src="images/Цемент М500.jpg" alt="Цемент М500" class="product-image">
+                        <h3>Цемент М500, 50 кг</h3>
+                        <p class="price">450 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Гипсокартон.jpg" alt="Гипсокартон" class="product-image">    
+                        <h3>Гипсокартон 2500×1200 мм</h3>
+                        <p class="price">390 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Саморезы.jpg" alt="Саморезы" class="product-image">
+                        <h3>Саморезы по дереву, 100 шт.</h3>
+                        <p class="price">120 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Строительный уровень.jpg" alt="Строительный уровень" class="product-image">
+                        <h3>Уровень строительный 60 см</h3>
+                        <p class="price">850 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                                        <div class="product-card">
+                        <img src="images/Цемент М500.jpg" alt="Цемент М500" class="product-image">
+                        <h3>Цемент М500, 50 кг</h3>
+                        <p class="price">450 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Гипсокартон.jpg" alt="Гипсокартон" class="product-image">    
+                        <h3>Гипсокартон 2500×1200 мм</h3>
+                        <p class="price">390 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Саморезы.jpg" alt="Саморезы" class="product-image">
+                        <h3>Саморезы по дереву, 100 шт.</h3>
+                        <p class="price">120 ₽</p>
+                        <button class="btn">В корзину</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Строительный уровень.jpg" alt="Строительный уровень" class="product-image">
+                        <h3>Уровень строительный 60 см</h3>
+                        <p class="price">850 ₽</p>
+                        <button class="btn">В корзину</button>
+                </div>
+            </section>
+
+            <!-- Адрес и контактная информация -->
+            <section id="contacts" class="contacts-section">   
+                <div class="address-block">
+                    <h2>Контакты и адрес</h2>
+                    <hr>
+                    <p><b>Адрес:</b> г. Красноярск, ул. Взлётная, д. 7а</p>
+                    <p><b>Телефон:</b> +7 (999) 999-99-99</p>
+                    <p><b>Email:</b> sale@stroymarket.ru</p>
+                    <p><b>Режим работы:</b> Пн–Пт: 09:00–19:00, Сб–Вс: 10:00–18:00</p>
+                </div>
+            </section>
+
+            <!-- Ссылки на похожие сайты -->
+            <section id="similar-sites" class="similar-section">
+                <div class="sites-block">
+                    <h3>Похожие сайты</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="https://www.virage24.ru" target="_blank">Вираж24</a></li>
+                        <li><a href="https://lemanapro.ru" target="_blank">ЛеманаПро</a></li>
+                        <li><a href="https://dedal24.ru" target="_blank">Дедал</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
